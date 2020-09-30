@@ -8,4 +8,153 @@
     android:clickable="true"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/addedCostTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/assistant_bold"
+        android:text="Added Cost:"
+        android:textColor="#533C7C"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/shipHeader"
+        app:layout_constraintTop_toBottomOf="@+id/baseCostTV" />
+
+    <TextView
+        android:id="@+id/addedCostDisplay3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/assistant"
+        android:text="$0.00"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/addedCostTV2"
+        app:layout_constraintEnd_toEndOf="@+id/shipHeader" />
+
+    <TextView
+        android:id="@+id/totalCostDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/assistant"
+        android:text="$0.00"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/addedCostTV"
+        app:layout_constraintEnd_toEndOf="@+id/shipHeader" />
+
+    <TextView
+        android:id="@+id/addedCostTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/assistant_bold"
+        android:text="Total Cost:"
+        android:textColor="#533C7C"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/shipHeader"
+        app:layout_constraintTop_toBottomOf="@+id/addedCostTV2" />
+
+    <TextView
+        android:id="@+id/shipHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:shadowColor="#000000"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="10"
+        android:text="SHIPPING CALCULATOR"
+        android:textColor="#CDDC39"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/shipWeightTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/assistant_bold"
+        android:text="Weight of the package:"
+        android:textColor="#120E0E"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shipHeader" />
+
+    <EditText
+        android:id="@+id/editWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shipWeightTV" />
+
+    <TextView
+        android:id="@+id/ozTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:text="oz"
+        android:textColor="#120E0E"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/editWeight"
+        app:layout_constraintTop_toBottomOf="@+id/shipWeightTV" />
+
+    <TextView
+        android:id="@+id/baseCostTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/assistant_bold"
+        android:text="Base Cost:"
+        android:textColor="#533C7C"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/shipHeader"
+        app:layout_constraintTop_toBottomOf="@+id/editWeight" />
+
+    <TextView
+        android:id="@+id/baseCostDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/assistant"
+        android:text="$0.00"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/baseCostTV"
+        app:layout_constraintEnd_toEndOf="@+id/shipHeader" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="15dp"
+        android:background="#533C7C"
+        app:layout_constraintEnd_toEndOf="@+id/shipHeader"
+        app:layout_constraintStart_toStartOf="@+id/shipHeader"
+        app:layout_constraintTop_toBottomOf="@+id/addedCostTV2" />
+
+    <TextView
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="14dp"
+        android:text="+"
+        android:textColor="#533C7C"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view" />
 </androidx.constraintlayout.widget.ConstraintLayout>
