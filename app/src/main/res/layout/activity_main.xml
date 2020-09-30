@@ -137,7 +137,7 @@
         app:layout_constraintEnd_toEndOf="@+id/shipHeader" />
 
     <View
-        android:id="@+id/view"
+        android:id="@+id/hr"
         android:layout_width="0dp"
         android:layout_height="2dp"
         android:layout_marginTop="15dp"
@@ -155,6 +155,6 @@
         android:text="+"
         android:textColor="#533C7C"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/view"
-        app:layout_constraintStart_toStartOf="@+id/view" />
+        app:layout_constraintBottom_toTopOf="@+id/hr"
+        app:layout_constraintStart_toStartOf="@+id/hr" />
 </androidx.constraintlayout.widget.ConstraintLayout>
