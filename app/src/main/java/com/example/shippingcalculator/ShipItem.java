@@ -27,7 +27,7 @@ public class ShipItem {
         return mBaseCost;
     }
 
-    public void computeCosts() {
+    public void computeCosts(){
         mAddedCost = 0.0;
         mBaseCost = BASE;
 
