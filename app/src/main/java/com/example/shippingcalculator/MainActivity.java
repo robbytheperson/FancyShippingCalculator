@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             displayShipping();
         }
 
-        public void afterTextChanged(Editable s) {
+        public void afterTextChanged(Editable s){
         }
 
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
